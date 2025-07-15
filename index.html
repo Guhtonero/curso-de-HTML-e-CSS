@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Gakuseisean-Ivista-2-Misc-Web-Database.256.png" type="image/x-icon">
+    <style>
+        h1{text-align: center;}
+    </style>
+    <style>
+        body{ background-color: rgb(181, 248, 201);}
+    </style>
+    <title>Aprendendo sobre links externos e internos</title>
+</head>
+<body>
+    <h1>Aprendendo sobre links externos e internos</h1>
+    <hr>
+    <h2>Links externos</h2>
+    <p>Um link externo é quando necessário que a palavra se torne interativa e direcione o usuário para outra página. Ou seja a página que será direcionada não pertence ao site atual.<mark> Usando a tag <strong>A</strong> e dentro do <strong>HREF</strong> colocando a <strong>URL</strong> voçê realiza a ação de criar um link externo</mark>. Infelizmente desse modo o site é sobrescrito. Exemplo:
+    </p>
+    <p>veja este <a href="https://youtu.be/_f0XcVwNa8A?si=M5MtUPyO38Us-QUb">video de gatinho fofo</a></p>
+    <p><mark>Para a nova aba nao se sobrepor ao site que criamos</mark>, utilizamos após a <strong>HREF</strong> a tag <mark style=color:blue;"><strong><CODE>TARGET=''BLANK'' REL=''EXTERNAL''</CODE></strong></mark>  <mark>assim caso o usuário clique no link será aberto uma nova janela.</mark> Exemplo:</p>
+    <p>veja este <a href="https://youtu.be/_f0XcVwNa8A?si=M5MtUPyO38Us-QUb" target="_blank" rel="EXTERNAL">video de gatinho fofo</a></p>
+    <h2>Links internos</h2>
+    <p><mark>O link interno significa que as páginas são do mesmo site, ou seja como se fossem camadas para encontrar algo</mark>. Para anexar paginas que estou escrevendo em html no mesmo código basta pressionar <strong>ctrl e barra de espaço</strong> após o <strong>HREF </strong>dentro da tag <strong>A</strong> referente ao link. Exemplo: </p>
+    <p>Para ser direcionado para a próxima página <a href="pag02.html" rel="next">clique aqui.</a></p>
+    <p>Na segunda pagina eu irei colocar um link para voltar para a página anterior (tambem tentarei colocar um botão de voltar)</p>
+    <p>não posso esquecer de colocar após o HREF o <strong>REL=''NEXT''</strong> na primeira pagina, e <strong>REL=''PREV'''</strong> na segunda página. <mark>Referente a ordem das paginas para o servidor entender a ordem das folhas</mark> </p>
+    <h2>Navegação entre pastas</h2>
+    <p>É necessário entender que para buscar uma pasta dentro do código Html principalmente no atributo <strong>HREF=</strong>  <mark style="background-color: chartreuse;">digitamos  <mark>./</mark> para encontrar elementos dentro da própia pasta</mark>, <mark style="background-color: greenyellow;">
+        para encontrar elementos de uma pasta anterior devemos digitar <mark>../</mark> </p>     
+    </mark></a>
+    <h2> Links para downloads</h2>
+    <p>Para fazer algo ser própicio para ser baixado da internet, é necessário a seguinte tag, atributo e valores; <MARK><CODE>HREF=(o arquivo que será baixado)DOWNLOADS=(BAIXAR O ARQUIVO EM PDF/ZIP/HTML/ETC) TYPE="APPLICATION/(ZIP/PDF/HTML/ETC)"</CODE></MARK></p>
+    <P>Para baixar o arquivo <a href="livro/14 - Fontes.pdf" download="baixar livro em pdf" type="application/pdf">clique aqui</a></P>
+    <p>Para baixar o arquivo <a href="livro/14 - Fontes.zip" download="baixar em zip" type="application/zip">aqui está</a></p>
+    
+</body>
+</html>
